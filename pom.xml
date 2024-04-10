@@ -18,7 +18,7 @@
 	<description>Maven Standalone Application</description>
 
 	<properties>
-		<sonar.host.url>http://localhost:9000/projects/create</sonar.host.url>
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
 		<sonar.login>squ_e735fda94aa977034be86ecc7c10f5c0790288b2</sonar.login>
 		<!--<sonar.password>admin</sonar.password>-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
