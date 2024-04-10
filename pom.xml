@@ -85,7 +85,7 @@
  <repository>
   <id>releasenexus</id>
   <name>release nexus</name>
-  <url>http://localhost:8081/repository/maven-webapp-releases//</url>
+  <url>http://localhost:8081/repository/maven-webapp-releases/</url>
  </repository>
 
 </distributionManagement>
