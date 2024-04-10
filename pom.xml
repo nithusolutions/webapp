@@ -4,7 +4,7 @@
 
 	<groupId>com.mt</groupId>
 	<artifactId>maven-standalone-application</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>maven-standalone-application</name>
@@ -18,9 +18,9 @@
 	<description>Maven Standalone Application</description>
 
 	<properties>
-		<sonar.host.url>http://35.154.242.68:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
+		<sonar.host.url>http://localhost:9000/projects/create</sonar.host.url>
+		<sonar.login>squ_e735fda94aa977034be86ecc7c10f5c0790288b2</sonar.login>
+		<!--<sonar.password>admin</sonar.password>-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
                 <maven.compiler.target>11</maven.compiler.target>
@@ -73,5 +73,20 @@
 	    </plugin>
 	  </plugins>
 	</build>
-	
+	<distributionManagement>
+ <!-- Publish the versioned releases here -->
+ 
+  <snapshotRepository>
+  <id>snapshotnexus</id>
+  <name>snapshot nexus</name>
+  <url>http://localhost:8081/repository/maven-webapp-snapshots/</url>
+ </snapshotRepository>
+ 
+ <repository>
+  <id>releasenexus</id>
+  <name>release nexus</name>
+  <url>http://localhost:8081/repository/maven-webapp-releases//</url>
+ </repository>
+
+</distributionManagement>
 </project>
