@@ -77,13 +77,13 @@
  <!-- Publish the versioned releases here -->
  
   <snapshotRepository>
-  <id>snapshotnexus</id>
+  <id>nexus</id>
   <name>snapshot nexus</name>
   <url>http://localhost:8081/repository/maven-webapp-snapshots/</url>
  </snapshotRepository>
  
  <repository>
-  <id>releasenexus</id>
+  <id>nexus</id>
   <name>release nexus</name>
   <url>http://localhost:8081/repository/maven-webapp-releases/</url>
  </repository>
