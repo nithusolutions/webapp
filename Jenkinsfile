@@ -8,6 +8,9 @@ node {
         // Run the maven build
        bat "mvn clean package"
     }
-   
+   stage('sonarqube')
+    {
+        bat "${mavenHome}/bin/ mvn sonar:sonar"
+    }
 }
 
